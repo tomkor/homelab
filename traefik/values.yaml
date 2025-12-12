@@ -1,7 +1,3 @@
-ports:
-  web:
-    redirectTo:
-      port: websecure
 ingressRoute:
   dachboard:
     enabled: true
