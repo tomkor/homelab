@@ -2,4 +2,4 @@ ingressRoute:
   dachboard:
     enabled: true
     entryPoints: [web, websecure]
-    matchRule: Host('traefik.tomkor.home')
+    matchRule: Host(`nginx.tomkor.net`)
