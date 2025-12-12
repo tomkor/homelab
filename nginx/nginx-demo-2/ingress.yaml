@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: nginx-demo-2-ingress
+  name: nginx-ingress
   namespace: nginx
 spec:
   rules:
-  - host: "nginx-demo-2.kube-demo-1.home.clcreative.de"
+  - host: "nginx.kube.tomkor.home"
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: nginx-demo-2-service
+            name: nginx-service
             port:
               number: 8080
