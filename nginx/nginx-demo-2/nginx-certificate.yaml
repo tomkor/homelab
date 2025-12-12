@@ -1,0 +1,12 @@
+apiVarsion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: nginx-ingressroute-certificate
+  namespace: nginx
+spec:
+  secretName: nginx-certificate-secret
+  issuerRef:
+    name: cloudflare-clusterissuer
+    kind: ClusterIssuer
+  dnsNames:
+    - nginx.tomkor.home
