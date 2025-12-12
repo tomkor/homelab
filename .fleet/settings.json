@@ -9,5 +9,6 @@
             "type": "add",
             "pluginName": "fleet.yaml"
         }
-    ]
+    ],
+    "editor.formatOnSave": true
 }
