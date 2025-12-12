@@ -10,5 +10,5 @@
             "pluginName": "fleet.yaml"
         }
     ],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
 }
