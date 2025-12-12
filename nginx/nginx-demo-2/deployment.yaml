@@ -1,33 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-demo-2-deployment
+  name: nginx
   namespace: nginx
 spec:
   replicas: 1
   selector:
     matchLabels: 
-      app: nginx-demo-2-app
+      app: nginx-
   template:
     metadata:
       labels:
-        app: nginx-demo-2-app
+        app: nginx
     spec:
       containers:
-      - name: nginx-demo-2-app
+      - name: nginx
         image: nginx:1.25.5-alpine
         ports:
           - name: web
             containerPort: 80
         volumeMounts:
-          - name: nginx-demo-2-vol-1
+          - name: nginx-vol-1
             mountPath: /usr/share/nginx/html
-          - name: nginx-demo-2-vol-2
+          - name: nginx-vol-2
             mountPath: /etc/nginx/conf.d
       volumes:
-      - name: nginx-demo-2-vol-1
+      - name: nginx-vol-1
         persistentVolumeClaim:
-          claimName: nginx-demo-2-vol-1-claim
-      - name: nginx-demo-2-vol-2
+          claimName: nginx-vol-1-claim
+      - name: nginx-vol-2
         configMap:
-          name: nginx-demo-2-configmap
+          name: nginx-configmap

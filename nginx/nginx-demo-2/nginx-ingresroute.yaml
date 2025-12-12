@@ -7,7 +7,7 @@ spec:
   entryPoint:
   - websecure
   routes:
-  - match: Host('nginx.tomkor.home')
+  - match: Host('nginx.tomkor.net')
     kind: Rule
     services:
     - name: nginx

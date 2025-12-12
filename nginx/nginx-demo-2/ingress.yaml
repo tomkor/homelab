@@ -7,7 +7,7 @@ metadata:
     traefik.ingres.kubernetes.io/router.entrypoints: websecure
 spec:
   rules:
-    - host: "nginx.tomkor.home"
+    - host: "nginx.tomkor.net"
       http:
         paths:
           - path: /
