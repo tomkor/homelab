@@ -1,0 +1,13 @@
+{
+    "toolchains": [],
+    "plugins": [
+        {
+            "type": "add",
+            "pluginName": "fleet.ssh"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.yaml"
+        }
+    ]
+}
