@@ -4,7 +4,7 @@ metadata:
   name: cloudflare-clusterissuer
 spec:
   acme:
-    email: info@clcreative.de
+    email: devtomb@gmail.com
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: cloudflare-clusterissuer-account-key
