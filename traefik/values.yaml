@@ -1,0 +1,9 @@
+ports:
+  web:
+    redirectTo:
+      port: websecure
+ingressRoute:
+  dachboard:
+    enabled: true
+    entryPoints: [web, websecure]
+    matchRule: Host('traefik.tomkor.home')
