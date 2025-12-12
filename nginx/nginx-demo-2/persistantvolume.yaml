@@ -10,4 +10,4 @@ spec:
   storageClassName: nfs
   nfs:
     server: 10.20.0.6
-    path: "/mnt/store/app-pv/nginx-demo-2-vol-1"
+    path: "/mnt/store/app-pv/nginx-vol-1"

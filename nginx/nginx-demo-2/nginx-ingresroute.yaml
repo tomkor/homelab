@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingressroute
   namespace: nginx
 spec:
-  entryPoint:
+  entryPoints:
   - websecure
   routes:
   - match: Host('nginx.tomkor.net')
