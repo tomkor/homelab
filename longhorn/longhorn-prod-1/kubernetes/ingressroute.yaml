@@ -8,7 +8,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`longhorn-prod-1.kube-prod-2.home.clcreative.de`)
+    - match: Host(`longhorn.tomkor.net`)
       kind: Rule
       services:
         - name: longhorn-frontend
