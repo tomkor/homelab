@@ -9,7 +9,7 @@ metadata:
     # traefik.ingress.kubernetes.io/router.tls.options: default
 spec:
   rules:
-    - host: argocd-demo-1.kube-demo-1.home.clcreative.de
+    - host: argocd.tomkor.net
       http:
         paths:
           - path: /
@@ -21,5 +21,5 @@ spec:
                   number: 80
   tls:
     - hosts:
-        - argocd-demo-1.kube-demo-1.home.clcreative.de
-      secretName: argocd-demo-1-tls-secret
+        - argocd.tomkor.net
+      secretName: argocd-tls-secret
