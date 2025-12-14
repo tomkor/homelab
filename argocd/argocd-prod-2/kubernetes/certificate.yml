@@ -6,7 +6,7 @@ metadata:
 spec:
   secretName: argocd-tls-secret
   issuerRef:
-    name: certmanager-clusterissuer
+    name: cloudflare-clusterissuer
     kind: ClusterIssuer
   dnsNames:
     - argocd.tomkor.net
